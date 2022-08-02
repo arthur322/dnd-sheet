@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --sheet-width: 1140px;
+  --sheet-height: 1470px;
+  --field-width: 385px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+#sheet-1 {
+  background-image: url("./public/FICHA-ICEWIND-1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: var(--sheet-width);
+  height: var(--sheet-height);
+}
+
+.grid-input {
+  position: absolute;
+}
+
+.base-input {
+  width: 385px;
+  min-height: 36px;
+  background: rgb(205 206 209 / 30%);
+  position: absolute;
+  color: black;
+  font-family: serif;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* ## TOP LEFT ## */
+.top-left {
+  position: absolute;
+  top: 52px;
+  left: 55px;
+}
+
+.class-and-level {
+  top: 0;
+  left: 0;
+}
+
+.alignment {
+  top: 58px;
+  left: 0px;
+}
+
+.race {
+  width: 290px;
+  top: 118px;
+  left: 0px;
+}
+
+/* ## TOP RIGHT ## */
+.top-right {
+  position: absolute;
+  top: 52px;
+  right: calc(100vw - var(--sheet-width) + var(--field-width) + 40px);
+}
+
+.background {
+  top: 0;
+  left: 0;
+}
+
+.player-name {
+  top: 58px;
+}
+
+.exp {
+  width: 290px;
+  top: 118px;
+  left: 95px;
+}
+
+/* ## TOP CENTER ## */
+.top-center {
+  position: absolute;
+  top: 170px;
+  left: calc(var(--sheet-width) / 2 - var(--field-width) / 2);
+}
+
+.char-name {
+  text-align: center;
+}
